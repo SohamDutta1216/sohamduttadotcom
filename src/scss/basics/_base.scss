@@ -1,0 +1,160 @@
+@use "/src/scss/helpers/variables" as var;
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(241, 229, 220);
+  color: var.$green;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.button-container {
+  padding: 1rem;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-header {
+  flex-direction: column;
+
+  @media(min-width: var.$tablet-l) {
+    flex-direction: row;
+    padding: 10rem;
+  }
+
+  gap: 10rem;
+
+}
+
+.menu {
+  font-family: 'Wagamama', sans-serif !important;
+  font-size: 2rem;
+  flex-direction: column;
+  text-align: center;
+
+  @media(min-width: var.$tablet-l) {
+    font-size: 4.5vw;
+    text-align: left;
+  }
+
+  a {
+    :hover {
+      cursor: pointer;
+      animation: wiggle 1.5s;
+      font-style: italic;
+    }
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(Odeg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(Odeg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.column {
+  flex-direction: column;
+}
+
+.header-info {
+  align-self: center;
+  text-align: center;
+
+  @media(min-width: var.$tablet-l) {
+    align-self: flex-end;
+    text-align: left;
+  }
+}
+
+.name {
+  padding-bottom: 1rem;
+}
+
+.main-page-wrapper {
+  position: relative;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
