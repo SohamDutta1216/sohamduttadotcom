@@ -4,6 +4,7 @@
     display: flex;
     padding: 1rem 8rem 0 8rem;
     background-color: var.$green;
+    height: 70vh;
     color: var.$mustard;
     border-radius: 10rem;
     margin: 2rem;
@@ -25,9 +26,13 @@
     }
 
     &__text {
-        max-width: 50rem;
+        max-width: 21rem;
         min-width: 15rem;
         padding: 1rem;
+
+        @media(min-width: var.$mobile) {
+            max-width: 50rem;
+        }
     }
 }
 
@@ -54,11 +59,11 @@
     display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
 }
 
 .to-top {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-
     color: var.$green;
     padding-top: 1.8em;
     font-size: 1rem;
@@ -103,4 +108,74 @@
     100% {
         transform: translateX(0);
     }
+}
+
+.line-desktop {
+    @media(min-width:var.$tablet-l) {
+        position: absolute;
+        background-color: black;
+        bottom: 2rem;
+        height: 60vh;
+        width: 1px;
+        left: 1.5rem;
+    }
+}
+
+.line-mobile {
+    background-color: black;
+    top: 1.5rem;
+    height: 1px;
+    width: 60vw;
+    position: absolute;
+    left: 2rem;
+
+    a:hover {
+        color: red;
+    }
+
+    @media(min-width:var.$tablet-l) {
+        display: none;
+    }
+}
+
+.social-wrapper-mobile {
+    position: absolute;
+    top: 1rem;
+    right: 6vw;
+    display: flex;
+    gap: 1rem;
+
+    p {
+        color: black;
+
+        &:hover {
+            text-decoration: line-through;
+        }
+    }
+
+    @media(min-width:var.$tablet-l) {
+        display: none;
+    }
+}
+
+.social-wrapper-desktop {
+    display: none;
+
+    @media(min-width:var.$tablet-l) {
+        position: absolute;
+        top: 6vh;
+        left: 0;
+        transform: rotate(-90deg);
+        display: flex;
+        gap: 1rem;
+
+        p {
+            color: black;
+
+            &:hover {
+                text-decoration: line-through;
+            }
+        }
+    }
+
 }

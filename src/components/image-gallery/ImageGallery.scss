@@ -1,0 +1,103 @@
+@use "/src/scss/helpers/variables" as var;
+
+.single-image {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50px;
+
+    @media(min-width: var.$tablet) {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    @media(min-width: var.$laptop) {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    overflow-x: scroll;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+
+    }
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.image-gallery {
+    display: flex;
+    padding: 1rem;
+    overflow-x: scroll;
+    width: 100vw;
+    height: 80vh;
+    gap: 1rem;
+
+    @media(min-width: var.$tablet) {
+        gap: 2rem;
+    }
+
+    @media(min-width: var.$laptop) {
+        gap: 3rem;
+    }
+}
+
+.main-image {
+    max-height: 80vh;
+    max-width: 80vw;
+    padding: .625rem;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-image-wrapper {
+    position: relative;
+    margin: auto auto;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    padding: 10vw 10vw;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-image-wrapper {
+    display: flex;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    align-content: center;
+}
+
+.close:hover,
+.close:focus {
+    transform: scale(1.5);
+    color: var.$mustard;
+    text-decoration: none;
+    cursor: pointer;
+}

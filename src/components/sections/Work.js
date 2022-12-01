@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useInterval } from '../hooks/useInterval'
+import ImageGallery from '../image-gallery/ImageGallery';
 
 const Work = (isInView) => {
     const [showButton, setShowButton] = useState(false)
@@ -16,7 +17,9 @@ const Work = (isInView) => {
                 {showButton === true && <a href="#home" class="to-top">Back to top</a>
                 }
             </div>
-            <h1>WORK</h1>
+
+            <ImageGallery />
+
         </section>
     );
 };
