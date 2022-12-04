@@ -5,6 +5,7 @@ import Landing from './sections/Landing';
 import Work from './sections/Work';
 import Contact from './sections/Contact'
 import { useIsInViewport } from './hooks/useIsInViewport';
+import "./root.css"
 
 const Layout = () => {
     const ref1 = useRef(null);

@@ -4,7 +4,7 @@ const Landing = (isInView) => {
     return (
         <section id="home" className="main-page-wrapper">
             <div className='line-mobile' />
-            <div className='social-wrapper-mobile'><a href="https://www.instagram.com/malihajahangiri/" target="_blank" ><p>IN</p></a><a href="https://www.instagram.com/malihajahangiri/" target="_blank" ><p>IN</p></a></div>
+            <div className='social-wrapper-mobile'><a href="https://www.instagram.com/malihajahangiri/" target="_blank" ><p>IN</p></a><a href="https://www.tiktok.com/@designbymals" target="_blank" ><p>TT</p></a></div>
             <div className='line-desktop' />
             <div className='social-wrapper-desktop'><a href="https://www.instagram.com/malihajahangiri/" target="_blank" ><p>IN</p></a><a href="https://www.tiktok.com/@designbymals" target="_blank" ><p>TT</p></a></div>
             <div className=' main-header row center'>

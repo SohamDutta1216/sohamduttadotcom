@@ -2,9 +2,8 @@
 
 .about {
     display: flex;
-    padding: 1rem 8rem 0 8rem;
+    padding: 1rem 13rem 0 13rem;
     background-color: var.$green;
-    height: 70vh;
     color: var.$mustard;
     border-radius: 10rem;
     margin: 2rem;
@@ -38,9 +37,10 @@
 
 .avatar {
     display: flex;
+    width: 10rem;
 
     @media(min-width: var.$tablet) {
-        width: fit-content;
+        width: 15rem;
     }
 }
 
@@ -64,6 +64,7 @@
 
 .to-top {
     animation: 1s ease-out 0s 1 slideInFromLeft;
+
     color: var.$green;
     padding-top: 1.8em;
     font-size: 1rem;
