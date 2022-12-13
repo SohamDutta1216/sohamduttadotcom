@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SOSlogo from '../../images/logo/SOSlogo.png'
 const Landing = (isInView) => {
     return (
         <section id="home" className="main-page-wrapper">
@@ -8,22 +8,19 @@ const Landing = (isInView) => {
             <div className='line-desktop' />
             <div className='social-wrapper-desktop'><a href="https://www.instagram.com/malihajahangiri/" target="_blank" ><p>IN</p></a><a href="https://www.tiktok.com/@designbymals" target="_blank" ><p>TT</p></a></div>
             <div className=' main-header row center'>
-                <div className=' header-info column'>
-                    <h3 className="name">MALIHA JAHANGIRI</h3>
-                    <br />
-                    <p>Interior Decorator</p>
-                    <br />
-                    <p>Based in Brooklyn, New York</p>
+                <div className='column'>
+                    <img src={SOSlogo} className='main-logo' />
+                    <h1 className='neonText' >SOUNDS OF SPOTLIGHT</h1>
                 </div>
                 <nav className='menu'>
                     <a href="#work">
-                        <h1>WORK</h1>
+                        <h1>SPOTLIGHTS</h1>
                     </a>
                     <a href="#about">
                         <h1>ABOUT</h1>
                     </a>
                     <a href="#contact">
-                        <h1>CONTACT</h1>
+                        <h1>CONTACT US</h1>
                     </a>
                 </nav>
             </div >

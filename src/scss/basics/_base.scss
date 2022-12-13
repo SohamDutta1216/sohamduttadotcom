@@ -16,11 +16,11 @@ body {
   overflow-x: hidden;
   overflow: hidden;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'TheGoodMonolith', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(241, 229, 220);
-  color: var.$green;
+  background-color: var.$black;
+  color: var.$yellow;
 }
 
 code {
@@ -69,26 +69,39 @@ code {
     padding: 10rem;
   }
 
-  gap: 10rem;
+  gap: 5rem;
 
 }
 
 .menu {
-  font-family: 'Wagamama', sans-serif !important;
-  font-size: 2rem;
+  font-family: 'Dance Floor', sans-serif;
+  font-size: 3vw;
   flex-direction: column;
+  text-align: center;
+  color: var.$yellow;
   text-align: center;
 
   @media(min-width: var.$tablet-l) {
-    font-size: 4.5vw;
+    font-size: 1.5vw;
     text-align: left;
+    align-self: end;
+
   }
 
   a {
     :hover {
+      color: white;
       cursor: pointer;
-      animation: wiggle 1.5s;
-      font-style: italic;
+      scale: 1.01;
+      text-shadow:
+        0 0 7px var.$yellow,
+        0 0 10px var.$yellow,
+        0 0 21px var.$yellow,
+        0 0 42px var.$yellow,
+        0 0 2px var.$yellow,
+        0 0 2px var.$yellow,
+        0 0 12px var.$yellow,
+        0 0 51px var.$yellow;
     }
   }
 }

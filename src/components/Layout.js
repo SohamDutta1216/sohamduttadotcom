@@ -2,10 +2,11 @@ import React from 'react';
 import { useEffect, useRef, useState, useMemo } from 'react';
 import About from './sections/About';
 import Landing from './sections/Landing';
-import Work from './sections/Work';
+import Spotlights from './sections/Spotlights';
 import Contact from './sections/Contact'
 import { useIsInViewport } from './hooks/useIsInViewport';
 import "./root.css"
+
 
 const Layout = () => {
     const ref1 = useRef(null);
@@ -18,7 +19,7 @@ const Layout = () => {
     return (
         <div className='container'>
             <Landing />
-            <Work isInView={isInViewport1} />
+            <Spotlights isInView={isInViewport1} />
             <div ref={ref1} >
                 <About />
 

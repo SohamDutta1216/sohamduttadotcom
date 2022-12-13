@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useInterval } from '../hooks/useInterval'
 import ImageGallery from '../image-gallery/ImageGallery';
 
-const Work = (isInView) => {
+const Spotlights = (isInView) => {
     const [showButton, setShowButton] = useState(false)
     useInterval(() => {
         if (isInView.isInView === true) {
@@ -12,7 +12,8 @@ const Work = (isInView) => {
         }
     }, 20);
     return (
-        <section id="work" className='work'>
+        <section id="work" className='spotlights'>
+            <h1 className='neonText spotlight-header' >SPOTLIGHTS</h1>
             <div className='up'>
                 {showButton === true && <a href="#home" class="to-top">Back to top</a>
                 }
@@ -24,4 +25,4 @@ const Work = (isInView) => {
     );
 };
 
-export default Work;
+export default Spotlights;

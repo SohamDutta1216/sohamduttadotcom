@@ -4,17 +4,15 @@
     height: 15rem;
     width: 15rem;
     border-radius: 50px;
-
-    @media(min-width: var.$tablet) {
-        height: 20rem;
-        width: 20rem;
-    }
-
-    @media(min-width: var.$laptop) {
-        height: 30rem;
-        width: 30rem;
-    }
-
+    box-shadow:
+        0 0 5px var.$yellow,
+        0 0 1px var.$yellow,
+        0 0 9px var.$yellow,
+        0 0 2px var.$yellow,
+        0 0 6px var.$yellow,
+        0 0 2px var.$yellow,
+        0 0 2px var.$yellow,
+        0 0 1px var.$yellow;
     overflow-x: scroll;
     transition: all .2s ease-in-out;
 
@@ -97,7 +95,7 @@ button {
 .close:hover,
 .close:focus {
     transform: scale(1.5);
-    color: var.$mustard;
+    color: var.$yellow;
     text-decoration: none;
     cursor: pointer;
 }
