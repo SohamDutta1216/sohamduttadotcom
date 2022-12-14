@@ -4,6 +4,7 @@ import SongImage from '../../images/work/spotImg.jpeg'
 import FilmImage from '../../images/work/filmImg.png'
 import Apple from '../../images/logo/apple';
 import Spotify from '../../images/logo/spotify';
+import Imdb from '../../images/logo/Imdb';
 const ImageGallery = () => {
     const [mainSpotlight, setSpotlight] = useState('')
 
@@ -11,6 +12,7 @@ const ImageGallery = () => {
     let image
     let Slink
     let Alink
+    let Ilink
     switch (mainSpotlight) {
         case 'Did you know':
             text = 'Learn more behind the scenes and hear stories about the music you love'
@@ -18,13 +20,20 @@ const ImageGallery = () => {
             break
         case 'Artist Spotlight':
             text = 'Burna Boy'
+            image = 'https://assets.teenvogue.com/photos/62c87cd0650ca07dc89535cb/1:1/w_3000,h_3000,c_limit/Burna%20Boy%20-%202022%20Press%20Image%20-%20Elliot%20Hensford.jpg'
+            Slink = 'https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa?si=53ABiMTYRyWXqUC5FsNkBA'
+            Alink = 'https://music.apple.com/us/artist/burna-boy/591899010'
             break
         case 'Genre Spotlight':
             text = 'Reggaeton'
+            Slink = 'https://open.spotify.com/album/3ENNo73fIGsFXJPUDPH5nd?si=QogMqLZ4T9-1OcoTh91wcQ'
+            Alink = 'https://music.apple.com/us/playlist/reggaet%C3%B3n-essentials/pl.6cfed0a93df843f9bb2b7c98a424bc52'
+            image = 'https://www.billboard.com/wp-content/uploads/2021/06/Reggaeton-Jhay-Cortez-Wisin-Jowell-Randy-Rauw-Alejandro-Bad-Bunny-billboard-1500-1623162307.jpg'
             break
         case 'Film Spotlight':
             text = 'Pulp Fiction'
             image = FilmImage
+            Ilink = 'https://www.imdb.com/title/tt0110912/?ref_=ext_shr_lnk'
             break
         case 'Song of the Day':
             text = 'C U Girl'
@@ -46,7 +55,8 @@ const ImageGallery = () => {
                         <h4 className='modal__text'>{text}</h4>
                         {image && <img src={image} className='modal__image' />}
                         {(Slink || Alink) && <h3 style={{ padding: '3rem' }}>Stream it on</h3>}
-                        {Slink && <a style={{ paddingTop: '3rem' }} href={Slink} target='_blank'><Spotify /></a>}
+                        {Ilink && <a href={Ilink} target='_blank'><Imdb /></a>}
+                        {Slink && <a href={Slink} target='_blank'><Spotify /></a>}
                         {Alink && <a href={Alink} target='_blank' ><Apple /></a>}
                     </div>
                 </div>
