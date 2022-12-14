@@ -55,6 +55,7 @@ const ImageGallery = () => {
                         <h4 className='modal__text'>{text}</h4>
                         {image && <img src={image} className='modal__image' />}
                         {(Slink || Alink) && <h3 style={{ padding: '3rem' }}>Stream it on</h3>}
+                        {(Ilink) && <h3 style={{ padding: '3rem' }}>Learn more at</h3>}
                         {Ilink && <a href={Ilink} target='_blank'><Imdb /></a>}
                         {Slink && <a href={Slink} target='_blank'><Spotify /></a>}
                         {Alink && <a href={Alink} target='_blank' ><Apple /></a>}
