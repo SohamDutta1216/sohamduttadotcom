@@ -2,33 +2,33 @@ import React, { useState } from 'react';
 import './ImageGallery.scss'
 
 const ImageGallery = () => {
-    const [mainImage, setImage] = useState(null)
-    console.log(mainImage)
+    const [mainSpotlight, setSpotlight] = useState('')
+    console.log(mainSpotlight)
     return (
         <div>
-            {mainImage && (
+            {mainSpotlight && (
                 <div className='modal'>
-                    <button className="close" onClick={() => setImage(null)}>x</button>
+                    <button className="close" onClick={() => setSpotlight(null)}>x</button>
                     <div className="main-image-wrapper">
-                        <img src={mainImage} className='main-image' />
+                        <h1 className='neonText'>{mainSpotlight}</h1>
                     </div>
                 </div>
 
             )}
             <div className='image-gallery'>
-                <button >
+                <button onClick={() => setSpotlight('Did you know')}>
                     <div className='single-spotlight'><h4 className='single-spotlight__text'>Did you know?</h4></div>
                 </button>
-                <button >
+                <button onClick={() => setSpotlight('Artist Spotlight')}>
                     <div className='single-spotlight'><h4 className='single-spotlight__text'>Artist Spotlight</h4> </div>
                 </button>
-                <button >
+                <button onClick={() => setSpotlight('Genre Spotlight')}>
                     <div className='single-spotlight'><h4 className='single-spotlight__text'>Genre Spotlight</h4> </div>
                 </button>
-                <button >
+                <button onClick={() => setSpotlight('Film Spotlight')}>
                     <div className='single-spotlight'><h4 className='single-spotlight__text'>Film Spotlight</h4> </div>
                 </button>
-                <button >
+                <button onClick={() => setSpotlight('Song of the Day')}>
                     <div className='single-spotlight'><h4 className='single-spotlight__text'>Song of the Day</h4> </div>
                 </button>
             </div>
