@@ -1,8 +1,8 @@
 @use "/src/scss/helpers/variables" as var;
 
 .single-spotlight {
-    height: 9rem;
-    width: 9rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     box-shadow:
         0 0 5px var.$yellow,
@@ -16,15 +16,24 @@
     overflow-x: scroll;
     transition: all .2s ease-in-out;
 
+    @media(min-width:var.$tablet) {
+        height: 10rem;
+        width: 10rem;
+    }
+
     &:hover {
         transform: scale(1.1);
 
     }
 
     &__text {
-        font-size: 1rem;
+        font-size: 12px;
         position: relative;
         top: 40%;
+
+        @media(min-width:var.$tablet) {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -87,8 +96,8 @@ button {
     &__image {
         max-height: 20vh;
         max-width: 20vw;
-        min-height: 12vh;
-        min-width: 12vw;
+        min-height: 10vh;
+        min-width: 10vw;
     }
 }
 
