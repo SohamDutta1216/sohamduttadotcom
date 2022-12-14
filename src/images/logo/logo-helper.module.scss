@@ -1,0 +1,10 @@
+@use "/src/scss/helpers/variables" as var;
+
+.logo {
+
+    svg {
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}
