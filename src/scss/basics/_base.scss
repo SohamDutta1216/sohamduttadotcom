@@ -74,18 +74,20 @@ code {
 }
 
 .menu {
+  display: flex;
   font-family: 'Dance Floor', sans-serif;
   font-size: 3vw;
   flex-direction: column;
   text-align: center;
   color: var.$yellow;
   text-align: center;
+  gap: 1rem;
 
   @media(min-width: var.$tablet-l) {
     font-size: 1.5vw;
     text-align: left;
     align-self: end;
-
+    gap: 2rem;
   }
 
   a {

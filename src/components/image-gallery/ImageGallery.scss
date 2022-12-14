@@ -54,7 +54,11 @@ button {
     overflow-x: scroll;
     width: 100vw;
     height: 80vh;
-    gap: 3rem;
+    gap: 1rem;
+
+    button {
+        padding: 1rem;
+    }
 
     @media(min-width: var.$tablet-l) {
         justify-content: center;
