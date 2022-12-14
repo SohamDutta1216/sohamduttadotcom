@@ -12,7 +12,7 @@ const About = (isInView) => {
                             <p className="about__text">We are Sounds Of Spotlight, a movie and music enthusiasts favorite site. Bringing curated entertainment to you daily that you can't find anywhere else. </p>
                         </div>
                         <div className='logo-container'>
-                            <img src={SOSlogo} className='main-logo' />
+                            <img src={SOSlogo} className='about__logo' />
                         </div>
                     </div>
                 </div>
