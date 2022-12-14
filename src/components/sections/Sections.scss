@@ -18,12 +18,14 @@
 
     &__header {
         font-size: 3rem;
+        margin-bottom: 1rem;
     }
 
     &__row {
         display: flex;
         flex-direction: column;
         padding: 0 1rem;
+        gap: 2rem;
 
         @media(min-width: var.$tablet-l ) {
             flex-direction: row;
@@ -33,7 +35,7 @@
     &__text {
         max-width: 21rem;
         min-width: 15rem;
-        padding: 0 0 3rem 0;
+        padding: 1rem 0;
         font-size: 1.5rem;
 
         @media(min-width: var.$tablet) {
@@ -56,7 +58,7 @@
 }
 
 .logo-container {
-    width: 100%;
+    width: auto;
     text-align: -webkit-center;
 }
 
