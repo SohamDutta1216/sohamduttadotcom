@@ -1,9 +1,9 @@
 @use "/src/scss/helpers/variables" as var;
 
-.single-image {
-    height: 15rem;
-    width: 15rem;
-    border-radius: 50px;
+.single-spotlight {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
     box-shadow:
         0 0 5px var.$yellow,
         0 0 1px var.$yellow,
@@ -20,6 +20,12 @@
         transform: scale(1.1);
 
     }
+
+    &__text {
+        font-size: 1rem;
+        position: relative;
+        top: 40%;
+    }
 }
 
 button {
@@ -34,6 +40,7 @@ button {
 
 .image-gallery {
     display: flex;
+    justify-content: center;
     padding: 1rem;
     overflow-x: scroll;
     width: 100vw;

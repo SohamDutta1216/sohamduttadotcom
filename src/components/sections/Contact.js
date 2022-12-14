@@ -10,8 +10,8 @@ const Contact = (isInView) => {
         }
     }, 20);
     return (
-        <section id="contact">
-            <h1>CONTACT</h1>
+        <section id="contact" className='neonText'>
+            <h3>CONTACT US</h3>
         </section>
     );
 };

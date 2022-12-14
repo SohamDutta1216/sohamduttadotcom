@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
 import './ImageGallery.scss'
-import Image2 from '../../images/work/image2.jpeg'
-import Image3 from '../../images/work/image3.jpeg'
-import Image4 from '../../images/work/image4.jpeg'
-import Image5 from '../../images/work/image5.jpg'
-import Image6 from '../../images/work/image6.jpeg'
-import Image7 from '../../images/work/image7.jpeg'
-import Image8 from '../../images/work/image8.jpeg'
-import Image9 from '../../images/work/image9.jpg'
-const images = [Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9]
 
 const ImageGallery = () => {
     const [mainImage, setImage] = useState(null)
@@ -25,13 +16,21 @@ const ImageGallery = () => {
 
             )}
             <div className='image-gallery'>
-                {images.map((image, index) => {
-                    return (
-                        <button onClick={() => setImage(image)} key={index} >
-                            <img src={image} className='single-image' alt='image' />
-                        </button>
-                    )
-                })}
+                <button >
+                    <div className='single-spotlight'><h4 className='single-spotlight__text'>Did you know?</h4></div>
+                </button>
+                <button >
+                    <div className='single-spotlight'><h4 className='single-spotlight__text'>Artist Spotlight</h4> </div>
+                </button>
+                <button >
+                    <div className='single-spotlight'><h4 className='single-spotlight__text'>Genre Spotlight</h4> </div>
+                </button>
+                <button >
+                    <div className='single-spotlight'><h4 className='single-spotlight__text'>Film Spotlight</h4> </div>
+                </button>
+                <button >
+                    <div className='single-spotlight'><h4 className='single-spotlight__text'>Song of the Day</h4> </div>
+                </button>
             </div>
         </div>
     );
