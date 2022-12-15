@@ -36,7 +36,7 @@
         max-width: 21rem;
         min-width: 15rem;
         padding: 1rem 0;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
 
         @media(min-width: var.$tablet) {
             max-width: 50rem;
@@ -215,9 +215,7 @@
     p {
         color: var.$yellow;
 
-        &:hover {
-            text-decoration: line-through;
-        }
+
     }
 
     @media(min-width:var.$tablet-l) {

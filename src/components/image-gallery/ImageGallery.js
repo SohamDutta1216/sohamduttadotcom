@@ -5,6 +5,8 @@ import FilmImage from '../../images/work/filmImg.png'
 import Apple from '../../images/logo/apple';
 import Spotify from '../../images/logo/spotify';
 import Imdb from '../../images/logo/Imdb';
+import YoutubeEmbed from "./YoutubeEmbed";
+
 const ImageGallery = () => {
     const [mainSpotlight, setSpotlight] = useState('')
 
@@ -15,6 +17,7 @@ const ImageGallery = () => {
     let Ilink
     let info
     let title
+    let video
     switch (mainSpotlight) {
         case 'Did you know':
             info = 'Hear crazy stories behind the sounds of the music you love'
@@ -42,10 +45,11 @@ const ImageGallery = () => {
             break
         case 'Song of the Day':
             info = 'QUICK, need something to listen to? EVERY morning, have a song of the day waiting for you.'
-            title = 'C U Girl'
+            title = 'Umi Says by Mos Def'
             Slink = 'https://open.spotify.com/track/6FBzhcfgGacfXF3AmtfEaX?si=c50892d435694499'
             Alink = 'https://music.apple.com/us/album/c-u-girl/1030015256?i=1030015261'
-            image = SongImage
+            video = '"https://www.youtube.com/embed/vntLKOd9saI"'
+            text = "UMI = meaning “Mother” in Arabic. On the surface, UMI Says is soft and beautiful, thanks to its super smooth jazzy production, with assistance from a young will.i.am on the keys. Despite its soft tone, it serves as a powerful calling for the freedom of black people, recalling the everyday struggle that is living with dark colored skin, but reminding the relentless power we have within us to shine through it. “Shine your light on the world, shine your light for the world to see.” "
             break
         default:
             text = undefined;
@@ -61,7 +65,9 @@ const ImageGallery = () => {
                         {info && <p className='modal__info'>{info}</p>}
                         {title && <h4 className='modal__title'>{title}</h4>}
                         {image && <img src={image} className='modal__image' />}
-                        {(Slink || Alink) && <h3 style={{ padding: '3rem' }}>Stream it on</h3>}
+                        {video && <div className='video-player'> <iframe width="560" height="315" src="https://www.youtube.com/embed/vntLKOd9saI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>}
+                        {text && <p className="modal__info">{text}</p>}
+                        {(Slink || Alink) && <h3 style={{ padding: '2rem' }}>Stream it on</h3>}
                         {(Ilink) && <h3 style={{ padding: '3rem' }}>Learn more at</h3>}
                         {Ilink && <a href={Ilink} target='_blank'><Imdb /></a>}
                         {Slink && <a href={Slink} target='_blank'><Spotify /></a>}
