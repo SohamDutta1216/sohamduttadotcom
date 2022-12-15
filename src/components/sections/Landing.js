@@ -2,6 +2,7 @@ import React from 'react';
 import Instagram from '../../images/logo/instagram.js';
 import Tiktok from '../../images/logo/tiktok';
 import SOSlogo from '../../images/logo/SOSlogo.png'
+
 const Landing = (isInView) => {
     return (
         <section id="home" className="main-page-wrapper">
