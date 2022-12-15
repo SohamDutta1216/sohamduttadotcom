@@ -13,11 +13,11 @@ const Landing = (isInView) => {
                     <h1 className='neonText' >SOUNDS OF SPOTLIGHT</h1>
                 </div>
                 <nav className='menu'>
+                    <a href="#about">
+                        <h1>WHAT IS SOS?</h1>
+                    </a>
                     <a href="#work">
                         <h1>SPOTLIGHTS</h1>
-                    </a>
-                    <a href="#about">
-                        <h1>ABOUT</h1>
                     </a>
                     <a href="#contact">
                         <h1>CONTACT US</h1>

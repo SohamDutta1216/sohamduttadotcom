@@ -19,10 +19,9 @@ const Layout = () => {
     return (
         <div className='container'>
             <Landing />
-            <Spotlights isInView={isInViewport1} />
+            <About isInView={isInViewport1} />
+            <Spotlights />
             <div ref={ref1} >
-                <About />
-
                 <Contact />
             </div>
 
