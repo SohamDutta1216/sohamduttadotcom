@@ -11,10 +11,14 @@
     width: 100%;
 
     iframe {
+        width: 18rem;
+        height: 14rem;
 
+        @media(min-width:var.$tablet) {
+            width: 40vw;
+            height: 20vw;
 
-        width: 40vw;
-        height: 20vw;
+        }
 
     }
 }

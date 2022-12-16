@@ -14,7 +14,7 @@ function App() {
   const handleClick = async event => {
     setRotation(true)
     setTransition(true)
-    await delay(3000);
+    await delay(4000);
     setStarting(false)
   }
   return (

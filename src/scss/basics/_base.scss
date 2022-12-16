@@ -482,27 +482,40 @@ main {
   height: 1000vh;
   z-index: 1;
   left: 500rem;
-  animation: move 3.1s infinite alternate;
+  animation: move 7.3s infinite alternate;
 }
 
 @keyframes move {
   0% {
-    left: 400rem
+    left: 400rem;
   }
 
-  25% {
+  15% {
     left: 350rem
   }
 
-  50% {
-    left: 300rem
+  25% {
+    left: 150rem
   }
 
-  75% {
-    left: 200rem
+  40% {
+    left: 0rem;
+  }
+
+  55% {
+    left: 0rem;
+  }
+
+  60% {
+    left: 150rem;
+  }
+
+  70% {
+    left: 350rem;
   }
 
   100% {
-    left: 0rem
+    left: 400rem;
+
   }
 }
