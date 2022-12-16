@@ -6,6 +6,9 @@ import Needle from './images/needle.png'
 function App() {
   const [showStarting, setStarting] = useState(true)
   const [showRotation, setRotation] = useState(false)
+  const delay = ms => new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
   const handleClick = async event => {
     setRotation(true)
     await delay(2000);
