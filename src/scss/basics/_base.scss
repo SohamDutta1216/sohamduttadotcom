@@ -56,6 +56,10 @@ code {
   justify-content: center;
 }
 
+.start-container {
+  display: flex;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -182,10 +186,22 @@ section {
   }
 }
 
+.bg-image {
+  background-image: url(../../images/startPage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
 .start-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
 
   img {
     width: 19rem;

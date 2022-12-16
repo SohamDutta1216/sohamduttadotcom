@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState, useMemo } from 'react';
 import './scss/main.scss'
 import { GraphQLClient } from 'graphql-request';
 import SOSlogo from './images/logo/SOSlogo.png'
-
+import Needle from './images/needle.png'
 function App() {
   const [showStarting, setStarting] = useState(true)
   const [showRotation, setRotation] = useState(false)
@@ -22,13 +22,15 @@ function App() {
   return (
     <div >
       {showStarting &&
-        <div className={`start-logo ${showRotation && 'animate-rot'}`}>
-          <img src={SOSlogo} className='main-logo' />
-          <div className='play-container'>
-            <button onClick={() => handleClick()}>
-              <a className='play-btn' />
-              <h1>Press Play</h1>
-            </button>
+        <div>
+          <div className={`start-logo ${showRotation && 'animate-rot'}`}>
+            <img src={SOSlogo} className='main-logo' />
+            <div className='play-container'>
+              <button onClick={() => handleClick()}>
+                <a className='play-btn' />
+                <h1>Press Play</h1>
+              </button>
+            </div>
           </div>
         </div>
       }
