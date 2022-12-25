@@ -82,9 +82,6 @@ const ImageGallery = () => {
                 <button onClick={() => setSpotlight('Song of the Day')}>
                     <div className='single-spotlight'><div className='single-spotlight__text'><h4 className='single-spotlight__text'>Song of the Day</h4></div> </div>
                 </button>
-                <button onClick={() => setSpotlight('Did you know')}>
-                    <div className='single-spotlight '><div className='single-spotlight__text'><h4>Did you know?</h4></div></div>
-                </button>
                 <button onClick={() => setSpotlight('Artist Spotlight')}>
                     <div className='single-spotlight'><div className='single-spotlight__text'><h4>Artist Spotlight</h4> </div></div>
                 </button>
@@ -93,6 +90,12 @@ const ImageGallery = () => {
                 </button>
                 <button onClick={() => setSpotlight('Film Spotlight')}>
                     <div className='single-spotlight'><div className='single-spotlight__text'><h4 className='single-spotlight__text'>Film Spotlight</h4></div> </div>
+                </button>
+                <button onClick={() => setSpotlight('Live Sets/Performances')}>
+                    <div className='single-spotlight '><div className='single-spotlight__text'><h4>Live Sets/<br />Performances</h4></div></div>
+                </button>
+                <button onClick={() => setSpotlight('Did you know')}>
+                    <div className='single-spotlight '><div className='single-spotlight__text'><h4>Did you know?</h4></div></div>
                 </button>
             </div>
         </div >
