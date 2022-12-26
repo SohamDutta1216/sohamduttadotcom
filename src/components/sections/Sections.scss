@@ -24,7 +24,7 @@
     &__row {
         display: flex;
         flex-direction: column;
-        padding: 0 1rem;
+        padding: 0 20vw;
         gap: 2rem;
 
         @media(min-width: var.$tablet-l ) {
@@ -65,7 +65,7 @@
 .up {
     position: absolute;
     top: 0;
-    padding: .625rem;
+    padding: 3rem;
 }
 
 .main-logo {

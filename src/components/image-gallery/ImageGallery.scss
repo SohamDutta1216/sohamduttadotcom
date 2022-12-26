@@ -32,8 +32,8 @@
 }
 
 .single-spotlight {
-    height: 13.5rem;
-    width: 13.5rem;
+    height: 10.5rem;
+    width: 10.5rem;
     border-radius: 50px;
     box-shadow:
         0 0 5px var.$yellow,
@@ -48,8 +48,8 @@
     transition: all .2s ease-in-out;
 
     @media(min-width:var.$tablet) {
-        height: 20rem;
-        width: 20rem;
+        height: 15rem;
+        width: 15rem;
     }
 
     &:hover {
@@ -91,7 +91,7 @@ button {
     justify-content: flex-start;
     padding: 1rem;
     overflow-x: scroll;
-    width: 100vw;
+    width: 70vw;
     height: 80vh;
     gap: 1rem;
 
