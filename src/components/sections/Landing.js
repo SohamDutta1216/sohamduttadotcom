@@ -6,10 +6,7 @@ import SOSlogo from '../../images/logo/SOSlogo.png'
 const Landing = (isInView) => {
     return (
         <section id="home" className="main-page-wrapper">
-            <div className='line-mobile' />
             <div className='social-wrapper-mobile'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@kodak.lik" target="_blank" ><Tiktok /></a></div>
-            <div className='line-desktop' />
-            <div className='social-wrapper-desktop'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@kodak.lik" target="_blank" ><Tiktok /></a></div>
             <div className=' main-header row center'>
                 <div className='column'>
                     <img src={SOSlogo} className='main-logo' />

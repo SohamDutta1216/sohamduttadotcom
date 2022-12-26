@@ -74,7 +74,7 @@ code {
     padding: 5rem;
   }
 
-  gap: 5rem;
+  gap: 2rem;
 
 }
 
@@ -195,7 +195,7 @@ section {
   display: flex;
   height: 100vh;
   width: 100vw;
-  z-index: 0;
+  z-index: 1;
 }
 
 .needle {
@@ -218,11 +218,44 @@ section {
   width: 100%;
   height: 100%;
   background-position: center;
-  z-index: 0;
+  z-index: 1;
+}
+
+.start-nav {
+  background-color: #d4cdcd;
+  border: 3px solid #979797;
+  color: black;
+  text-align: center;
 }
 
 .start-overlay {
   background-image: url("https://dwvo2npct47gg.cloudfront.net/gifs/home-background-2.gif");
+
+  iframe {
+    display: none;
+  }
+
+  @media(min-width: var.$tablet) {
+    iframe {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 120vw;
+      height: 110vh;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+  }
+
+  @media(min-width: var.$desktop) {
+    iframe {
+      overflow: hidden;
+      width: 120vw;
+      height: 110vh;
+    }
+  }
+
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -230,15 +263,14 @@ section {
 }
 
 .start-box {
+  border: 2px solid black;
   z-index: 0;
   background: #e6e2e2;
-  margin: 0 5rem;
+  margin: 0 auto;
   border-radius: 10px;
-
-  @media(min-width: var.$tablet) {
-    margin: 0 auto;
-
-  }
+  width: 13rem;
+  position: relative;
+  top: 30vh;
 }
 
 .play-button {
@@ -260,11 +292,6 @@ section {
 
   img {
     width: 13rem;
-
-    @media(min-width: var.$tablet) {
-      width: 20rem;
-
-    }
 
     animation: rotation 3s infinite linear;
 
@@ -518,8 +545,8 @@ main {
 .black {
   position: fixed;
   display: block !important;
-  height: 1000vh;
-  z-index: 1;
+  height: 100vh;
+  z-index: 2;
   left: 500rem;
   animation: move 7.3s infinite alternate;
 }

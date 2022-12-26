@@ -21,12 +21,13 @@ function App() {
     <div >
       {showStarting &&
         <div className='start-overlay'>
-          <div className='start-bg'>
-            <img src={Black} style={{ display: 'none' }} className={`${showTransition && 'black'}`} />
-            <div>
-
-              <div className={`start-logo ${showRotation && 'animate-rot'}`}>
+          <iframe src="https://www.youtube.com/embed/lhJpOjqho8s?&autoplay=1&loop=1&showinfo=0&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+          <img src={Black} style={{ display: 'none' }} />
+          <div>
+            <div className={`start-logo ${showRotation && 'animate-rot'}`}>
+              <div className='start-bg'>
                 <div className='start-box'>
+                  <div className='start-nav'>Sounds of Spotlight</div>
                   <div className='start-main-container'>
                     <img src={SOSlogo} className='main-logo' />
                   </div>
