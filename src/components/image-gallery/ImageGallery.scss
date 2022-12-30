@@ -91,9 +91,14 @@ button {
     justify-content: flex-start;
     padding: 1rem;
     overflow-x: scroll;
-    width: 70vw;
+    width: 100vw;
     height: 80vh;
     gap: 1rem;
+    padding-left: 3rem;
+
+    @media (min-width:var.$tablet-l) {
+        width: 74vw;
+    }
 
     button {
         padding: 1rem;

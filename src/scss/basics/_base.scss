@@ -81,7 +81,7 @@ code {
 .menu {
   display: flex;
   font-family: 'Dance Floor', sans-serif;
-  font-size: 3vw;
+  font-size: 2.3vw;
   flex-direction: column;
   text-align: center;
   color: var.$yellow;
@@ -211,17 +211,33 @@ section {
   display: flex;
 }
 
+.start-bg-secondary {
+  background-image: none;
+
+  @media (min-width:var.$tablet-l) {
+    bottom: 0px;
+    left: 0;
+    position: relative;
+    background-image: url('../../images/overlay.png');
+    background-size: 97% 95%;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    z-index: 1;
+  }
+}
+
 .start-bg {
   bottom: 0px;
   left: 0;
   position: relative;
-  background-size: cover;
   background-image: url('../../images/overlay.png');
   background-size: 97% 95%;
   width: 100vw;
   height: 100vh;
   background-position: center;
   z-index: 1;
+
 }
 
 .start-nav {
@@ -286,7 +302,6 @@ section {
 }
 
 .start-logo {
-  background: url();
   display: flex;
   flex-direction: column;
   justify-content: center;

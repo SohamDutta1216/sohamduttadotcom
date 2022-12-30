@@ -45,7 +45,7 @@ function App() {
         </div>
       }
       {!showStarting &&
-        <div className='start-bg'>
+        <div className='start-bg-secondary'>
           <Layout />
         </div>
       }
