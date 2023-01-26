@@ -8,23 +8,18 @@ import { useIsInViewport } from './hooks/useIsInViewport';
 import "./root.css"
 
 
-const Layout = () => {
+const Layout = ({ spotLightsData }) => {
     const ref1 = useRef(null);
-    const ref2 = useRef(null);
-    const ref3 = useRef(null);
-    const ref4 = useRef(null);
     const isInViewport1 = useIsInViewport(ref1);
-
 
     return (
         <div className='container'>
             <Landing />
             <About isInView={isInViewport1} />
-            <Spotlights />
             <div ref={ref1} >
+                <Spotlights spotLightsData={spotLightsData} />
                 <Contact />
             </div>
-
         </div>
     );
 };

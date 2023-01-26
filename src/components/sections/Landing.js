@@ -13,7 +13,7 @@ const Landing = (isInView) => {
             <div className=' main-header row center'>
                 <div className='column'>
                     <img src={SOSlogo} className='main-logo' />
-                    <h1 className='neonText' >SOUNDS <br />OF <br />SPOTLIGHT</h1>
+                    <h1 className='neonText' >SOUNDS OF SPOTLIGHT</h1>
                 </div>
                 <nav className='menu'>
                     <a href="#about">

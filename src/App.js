@@ -2,12 +2,16 @@ import Layout from './components/Layout';
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import './scss/main.scss'
 import SOSlogo from './images/logo/SOSlogoalt.png'
-import Needle from './images/needle.png'
 import Black from './images/black.png'
+import useContentful from './useContentful'
+
 function App() {
   const [showStarting, setStarting] = useState(true)
   const [showRotation, setRotation] = useState(false)
   const [showTransition, setTransition] = useState(false)
+  const [starterVideo, setStarterVideo] = useState('')
+  const [spotLightsData, setSpotLightsData] = useState({})
+  const { getData } = useContentful()
   const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
   );
@@ -17,11 +21,26 @@ function App() {
     await delay(4000);
     setStarting(false)
   }
+
+  useEffect(() => {
+    getData().then((response) => {
+      response.items.map((allData) => {
+        const data = allData.fields
+        if (data.url) {
+          setStarterVideo(data.url)
+        }
+      })
+      if (response.items) {
+        setSpotLightsData(response)
+      }
+    })
+  }, [])
+  console.log(spotLightsData)
   return (
     <div >
       {showStarting &&
         <div className='start-overlay'>
-          <iframe src="https://www.youtube.com/embed/lhJpOjqho8s?&autoplay=1&loop=1&showinfo=0&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+          <iframe src={`${starterVideo}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
           <img src={Black} style={{ display: 'none' }} />
           <div>
             <div className={`start-logo ${showRotation && 'animate-rot'}`}>
@@ -46,7 +65,7 @@ function App() {
       }
       {!showStarting &&
         <div className='start-bg-secondary'>
-          <Layout />
+          <Layout spotLightsData={spotLightsData} />
         </div>
       }
     </div>
