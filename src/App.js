@@ -4,6 +4,7 @@ import './scss/main.scss'
 import SOSlogo from './images/logo/SOSlogoalt.png'
 import Black from './images/black.png'
 import useContentful from './useContentful'
+import SOSlogoAlt from './images/logo/SOSlogo.png'
 
 function App() {
   const [showStarting, setStarting] = useState(true)
@@ -38,6 +39,22 @@ function App() {
   console.log(spotLightsData)
   return (
     <div >
+      {showStarting &&
+        <div className='mobile-view'>
+          <img src={Black} style={{ display: 'none' }} className={`${showTransition && 'black'}`} />
+          <div className={`start-logo-alt ${showRotation && 'animate-rot'}`}>
+            <div className='start-main-container'>
+              <img src={SOSlogoAlt} className='main-logo' />
+            </div>
+            <div className='play-container'>
+              <button onClick={() => handleClick()}>
+                <a className='play-btn js-trigger-transition' />
+                <h1>Press Play</h1>
+              </button>
+            </div>
+          </div>
+        </div>
+      }
       {showStarting &&
         <div className='start-overlay'>
           <iframe src={`${starterVideo}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
