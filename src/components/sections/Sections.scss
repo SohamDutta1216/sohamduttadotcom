@@ -203,6 +203,16 @@
     }
 }
 
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    svg {
+        width: 5rem;
+    }
+}
+
 .social-wrapper-mobile {
     position: fixed;
     top: 1rem;

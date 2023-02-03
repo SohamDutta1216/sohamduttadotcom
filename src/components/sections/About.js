@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useInterval } from '../hooks/useInterval'
 import './Sections.scss'
 import SOSlogo from '../../images/logo/SOSlogo.png'
+import Instagram from '../../images/logo/instagram.js';
+import Tiktok from '../../images/logo/tiktok';
 const About = (isInView) => {
     const [showButton, setShowButton] = useState(false)
     useInterval(() => {
@@ -15,7 +17,12 @@ const About = (isInView) => {
 
         <section id="about" >
             <div className='up'>
-                {showButton === true && <a href="#home" class="to-top">Back to top</a>
+                {showButton &&
+                    <>
+                        <a href="#home" class="to-top">Back to top</a>
+                        <div className='social-wrapper-mobile'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@kodak.lik" target="_blank" ><Tiktok /></a></div>
+                        <div className='social-wrapper-tablet'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@kodak.lik" target="_blank" ><Tiktok /></a></div>
+                    </>
                 }
             </div>
             <div className='about'>
