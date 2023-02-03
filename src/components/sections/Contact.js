@@ -4,8 +4,9 @@ import Instagram from '../../images/logo/instagram.js';
 import Tiktok from '../../images/logo/tiktok';
 const Contact = () => {
     return (
-        <section id="contact" className='neonText'>
-            <h3>CONTACT US</h3>
+        <section id="contact" >
+            <h3 className='neonText header'>CONTACT US</h3>
+            <p>soundsofspotlight@gmail.com</p>
         </section>
 
     );

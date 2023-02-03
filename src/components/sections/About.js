@@ -20,8 +20,8 @@ const About = (isInView) => {
                 {showButton &&
                     <>
                         <a href="#home" class="to-top">Back to top</a>
-                        <div className='social-wrapper-mobile'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@kodak.lik" target="_blank" ><Tiktok /></a></div>
-                        <div className='social-wrapper-tablet'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@kodak.lik" target="_blank" ><Tiktok /></a></div>
+                        <div className='social-wrapper-mobile'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@soundsofspotlight" target="_blank" ><Tiktok /></a></div>
+                        <div className='social-wrapper-tablet'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><Instagram /></a><a href="https://www.tiktok.com/@soundsofspotlight" target="_blank" ><Tiktok /></a></div>
                     </>
                 }
             </div>

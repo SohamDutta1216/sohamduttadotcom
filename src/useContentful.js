@@ -10,7 +10,7 @@ const useContentful = () => {
             const data = await client.getEntries();
             return data
         } catch (error) {
-            console.log("Error fetching starter video")
+            console.log("Error fetching data")
         }
     }
     return { getData }

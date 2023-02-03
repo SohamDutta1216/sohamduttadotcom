@@ -1,5 +1,10 @@
 @use "/src/scss/helpers/variables" as var;
 
+.header {
+    position: relative;
+    top: -4rem;
+}
+
 .about {
     display: flex;
     flex-direction: column;

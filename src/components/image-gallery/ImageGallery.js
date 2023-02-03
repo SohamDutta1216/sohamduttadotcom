@@ -16,7 +16,6 @@ const ImageGallery = ({ spotLightsData }) => {
                         <div className="main-image-wrapper">
                             <h1 className='neonText'>{mainSpotlight}</h1>
                             {spotLightsData.map((spotLight) => {
-                                console.log(spotLight)
                                 if (spotLight.fields.spotLightTitle === mainSpotlight) {
                                     return (
                                         <>
@@ -42,7 +41,6 @@ const ImageGallery = ({ spotLightsData }) => {
             }
             <div className='image-gallery'>
                 {spotLightsData.map((spotLight, index) => {
-                    console.log(spotLight.fields.spotLightTitle)
                     {
                         if (spotLight.fields.spotLightTitle) {
                             return (
