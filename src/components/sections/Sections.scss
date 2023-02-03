@@ -38,17 +38,18 @@
     }
 
     &__text {
-        max-width: 21rem;
-        min-width: 15rem;
+        max-width: 26rem;
+        min-width: 21rem;
         padding: 1rem 0;
-        font-size: 1.3rem;
+        font-size: 12px;
 
         @media(min-width: var.$tablet) {
             max-width: 50rem;
+            font-size: 1rem;
         }
 
-        @media(min-width: var.$mobile) {
-            max-width: 50rem;
+        @media(min-width: var.$tablet-l) {
+            font-size: 1.3rem;
         }
     }
 }
@@ -71,6 +72,10 @@
     position: absolute;
     top: 0;
     padding: 3rem;
+
+    @media(min-width: var.$tablet-l) {
+        padding: 4rem;
+    }
 }
 
 .main-logo {
@@ -137,8 +142,7 @@
 .to-top {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     color: var.$yellow;
-    padding-top: 1.8em;
-    font-size: 1rem;
+    font-size: 12px;
     display: inline-block;
     /* or block */
     position: relative;
@@ -151,7 +155,7 @@
     content: '▲';
     font-size: .9em;
     position: absolute;
-    top: 0;
+    top: -1rem;
     left: 50%;
     margin-left: -.7em;
     border-radius: 10em;
@@ -159,6 +163,8 @@
     height: 1.4em;
     line-height: 1.3em;
     transition: transform .5s ease-in;
+
+    @media(min-width: var.$tablet-l) {}
 }
 
 .to-top:hover {
