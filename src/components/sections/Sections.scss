@@ -5,15 +5,32 @@
     top: -4rem;
 }
 
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 .about {
     display: flex;
     flex-direction: column;
     ;
 
     &__logo {
-        width: 16.5rem;
+        max-width: 13rem;
+        max-height: 13rem;
         margin: 0 auto;
+        align-self: center;
         filter: brightness(87%);
+
+        &:hover {
+            animation: rotation 3s infinite linear;
+        }
+
     }
 
     &__column {
@@ -54,6 +71,7 @@
     }
 }
 
+
 .avatar {
     display: flex;
     width: 10rem;
@@ -64,7 +82,8 @@
 }
 
 .logo-container {
-    width: auto;
+    display: flex;
+    justify-content: center;
     text-align: -webkit-center;
 }
 
@@ -83,7 +102,12 @@
     padding: 2rem;
     margin: 0 auto;
     filter: brightness(87%);
+
+    &:hover {
+        animation: rotation 3s infinite linear;
+    }
 }
+
 
 .neonText {
     font-family: 'Dance Floor', sans-serif;
