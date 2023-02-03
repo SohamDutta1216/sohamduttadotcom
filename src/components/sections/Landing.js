@@ -24,7 +24,7 @@ const Landing = (isInView) => {
                     <a href="#contact">
                         <h1>CONTACT US</h1>
                     </a>
-                    <div className='social-wrapper'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><LGinstagram /></a><a href="https://www.tiktok.com/@kodak.lik" target="_blank" ><LGtiktok /></a></div>
+                    <div className='social-wrapper'><a href="https://www.instagram.com/soundsofspotlight/" target="_blank" ><LGinstagram /></a><a href="https://www.tiktok.com/@soundsofspotlight" target="_blank" ><LGtiktok /></a></div>
                 </nav>
             </div >
         </section>
