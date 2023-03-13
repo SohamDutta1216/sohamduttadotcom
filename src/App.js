@@ -36,7 +36,6 @@ function App() {
       }
     })
   }, [])
-  console.log(spotLightsData)
   return (
     <div >
       {showStarting &&
