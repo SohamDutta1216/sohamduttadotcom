@@ -110,19 +110,19 @@
 
 
 .neonText {
-    font-family: 'Dance Floor', sans-serif;
+    font-family: 'Pixel12x10', sans-serif;
     color: #fff;
     font-size: 4.2vw;
     text-align: center;
     text-shadow:
-        0 0 7px var.$yellow,
-        0 0 10px var.$yellow,
-        0 0 21px var.$yellow,
-        0 0 42px var.$yellow,
-        0 0 2px var.$yellow,
-        0 0 2px var.$yellow,
-        0 0 12px var.$yellow,
-        0 0 51px var.$yellow;
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px white,
+        0 0 2px white,
+        0 0 2px white,
+        0 0 12px white,
+        0 0 51px white;
     animation: animate 3s infinite alternate;
 
     @media(min-width: var.$tablet-l) {
@@ -165,12 +165,12 @@
 
 .to-top {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-    color: var.$yellow;
+    color: white;
     font-size: 12px;
     display: inline-block;
     /* or block */
     position: relative;
-    color: var.$yellow;
+    color: white;
     text-decoration: none;
     transition: all .3s ease-out;
 }
@@ -192,8 +192,8 @@
 }
 
 .to-top:hover {
-    color: var.$yellow;
-    border-color: var.$yellow;
+    color: white;
+    border-color: white;
 }
 
 .to-top:hover:before {
@@ -213,7 +213,7 @@
 .line-desktop {
     @media(min-width:var.$tablet-l) {
         position: fixed;
-        background-color: var.$yellow;
+        background-color: white;
         bottom: 2rem;
         height: 60vh;
         width: 1px;
@@ -222,7 +222,7 @@
 }
 
 .line-mobile {
-    background-color: var.$yellow;
+    background-color: white;
     top: 1.5rem;
     height: 1px;
     width: 60vw;
@@ -256,7 +256,7 @@
     gap: 1rem;
 
     p {
-        color: var.$yellow;
+        color: white;
     }
 
     @media(min-width:var.$tablet-l) {
@@ -275,7 +275,7 @@
         gap: 1rem;
 
         p {
-            color: var.$yellow;
+            color: white;
         }
     }
 }

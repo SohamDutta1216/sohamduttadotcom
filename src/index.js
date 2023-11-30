@@ -7,7 +7,12 @@ import './scss/main.scss'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='border'></div>
+    <div className="screen-overlay">
+      <div className='screen-container screen-change'>
+        <App />
+      </div>
+    </div>
   </React.StrictMode>
 );
 
