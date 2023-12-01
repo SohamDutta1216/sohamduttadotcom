@@ -1,11 +1,16 @@
 import React from 'react';
 import { useEffect, useRef, useState, useMemo } from 'react';
-import "./root.css"
 import HomeIcon from '../images/icons/home.gif'
 import GitIcon from '../images/icons/git.gif'
 import LinkIcon from '../images/icons/linked.gif'
 import MeIcon from '../images/icons/me.png'
+import FolderClosed from '../images/icons/folder-closed.png'
+import FolderOpen from '../images/icons/folder-open.png'
+import { useHover } from "@uidotdev/usehooks";
+import { Outlet, Link } from "react-router-dom";
+
 const Layout = ({ spotLightsData }) => {
+    const [ref, hovering] = useHover();
     return (
         <section className="main-page-wrapper screen-change bg-image">
             <div className='icon-wrapper-left'>
@@ -20,6 +25,24 @@ const Layout = ({ spotLightsData }) => {
                 <img className='icon__me' src={MeIcon} />
             </div>
             <div className='modal-bottom'>
+                <div className='folder-wrapper'>
+                    <div className='folder-columns'>
+                        <div className='folder' />
+                        <p>About Me</p>
+                    </div>
+                    <div className='folder-columns'>
+                        <div className='folder' />
+                        <p>Work</p>
+                    </div>
+                    <div className='folder-columns'>
+                        <div className='folder' />
+                        <p>Skills</p>
+                    </div>
+                    <div className='folder-columns'>
+                        <div className='folder' />
+                        <p>Contact</p>
+                    </div>
+                </div>
             </div>
         </section>
     );

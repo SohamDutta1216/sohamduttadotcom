@@ -22,8 +22,8 @@ function App() {
     await delay(100);
     setStarting(false)
   }
-  return (
 
+  return (
     <div className="screen-overlay ">
       <div className='screen-container screen-change'>
         {showStarting &&
@@ -38,7 +38,7 @@ function App() {
           </div>
         }
         {!showStarting &&
-          <Layout />
+          <Layout spotLightsData={spotLightsData} />
         }
       </div>
     </div>
