@@ -1,0 +1,227 @@
+.nokia-bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    animation: nokia 3s 1 normal ease-out forwards;
+    position: relative;
+    z-index: 100;
+
+    .phone-full-wrapper {
+        width: 300px;
+        height: 440px;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+    }
+
+    .phone-wrapper {
+        width: 200px;
+        background: grey;
+        border-radius: 20px;
+        height: 440px;
+        margin: 0 auto;
+
+        // animation:rotate-phone 20s infinite ease-in;
+        .speaker {
+            border-radius: 10px;
+            display: inline-block;
+            width: 40px;
+            height: 5px;
+            background: #000;
+            margin: 10px auto;
+        }
+
+        .brand-name {
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .screen {
+            background: #000;
+            box-shadow: 0px 0px 2px 4px inset #000;
+            color: #fff;
+            height: 200px;
+            margin: 10px 20px;
+            position: relative;
+
+
+            &:before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 0px solid transparent;
+                border-bottom: 200px solid transparent;
+                border-left: 170px solid rgba(255, 255, 255, 0.3);
+                position: absolute;
+                left: 0;
+            }
+
+            .locked-screen {
+                font-family: sans-serif;
+                padding-top: 50px;
+
+                span {
+                    display: block;
+
+                    &.date,
+                    .period {
+                        font-size: 12px;
+                    }
+
+                    &.time {
+
+                        button {
+                            position: relative;
+                            width: 7rem;
+                            height: auto;
+                            border-style: double;
+                            border-color: green;
+                            font-size: 1rem;
+                            padding: 10px 0;
+
+                            &:hover {
+                                background-color: green;
+                                border-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .keypad {
+            margin: 0 20px;
+
+            button {
+                background: grey;
+                border: 1px solid #000;
+                border-radius: 5px;
+                box-shadow: 0px 0px 2px 1px inset #000;
+                padding: 3px 0;
+                width: 100%;
+                margin-bottom: 5px;
+
+                span {
+                    font-size: 9px;
+                    margin-left: 4px;
+                }
+
+                &.big {
+                    border-radius: 15px;
+                    padding: 22px;
+                    margin: 0 10px;
+                    border: 1px double black;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        width: calc(100% - 10px);
+                        height: calc(100% - 10px);
+                        border: 1px solid #000;
+                        border-radius: 15px;
+                        position: absolute;
+                        left: 4px;
+                        top: 4px;
+                        box-shadow: 0px 0px 2px 1px inset #000;
+                    }
+                }
+            }
+
+            .actions-left,
+            .actions-center,
+            .actions-right {
+                width: 30%;
+                float: left;
+            }
+
+            .actions-center {
+                width: calc(40% - 20px);
+            }
+
+            .actions-right {
+                float: right;
+            }
+
+            .numbers {
+                float: left;
+                width: 100%;
+                text-align: left;
+
+                .numbers-left,
+                .numbers-center,
+                .numbers-right {
+                    width: 30%;
+                    float: left;
+                }
+
+                .numbers-center {
+                    margin: 0 8px;
+                }
+
+                .number-right {
+                    button {
+                        span {
+                            margin-left: 0;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .wrapper-back {
+        height: 100px;
+        background: grey;
+        // transform:translateZ(10x);
+        transform: perspectiveX(90deg);
+        // position:absolute;
+        top: 0;
+    }
+}
+
+
+@keyframes rotate-phone {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(30deg);
+    }
+
+    75% {
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateY(150deg);
+    }
+}
+
+
+
+@keyframes nokia {
+    0% {
+        top: 100rem;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
