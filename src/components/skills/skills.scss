@@ -1,0 +1,139 @@
+@use "/src/scss/helpers/variables" as var;
+
+.skills-buttons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.skill-button {
+    border-style: outset;
+    border-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    height: 100%;
+
+    button {
+        width: 100%;
+        background-color: grey;
+        color: white;
+
+        &:hover {
+            background-color: rgb(28, 28, 28);
+        }
+    }
+}
+
+.skill-button-pressed {
+    border-style: outset;
+    border-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    height: 100%;
+
+    button {
+        width: 100%;
+        background-color: grey;
+        color: white;
+        background-color: #000000;
+
+        &:hover {
+            background-color: rgb(28, 28, 28);
+        }
+    }
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-card {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    background-color: grey;
+    border-radius: 2rem 0;
+    height: 50vh;
+    align-items: flex-start;
+
+    img {
+        display: flex;
+        width: auto;
+        padding: 1rem;
+        background-color: rgba(196, 194, 194, 0.884);
+        border-radius: 2rem 0 2rem;
+        height: 25vh;
+    }
+}
+
+.skill-title {
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    top: 5px;
+}
+
+.skill-bar {
+    background-color: rgba(221, 220, 220, 0.631);
+    width: 100%;
+    font-size: 12px;
+
+    @media(min-width: 0px) {
+        font-size: 14px;
+    }
+}
+
+.five {
+    padding: 5px;
+    background-color: green;
+    width: 100%;
+    text-align: left;
+}
+
+.four {
+    padding: 5px;
+    background-color: green;
+    width: 80%;
+    text-align: left;
+}
+
+.threefive {
+    padding: 5px;
+    background-color: green;
+    width: 70%;
+    text-align: left;
+}
+
+
+.two {
+    padding: 5px;
+    background-color: green;
+    width: 40%;
+    text-align: left;
+}
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills-row {
+    flex-direction: row;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+    padding: 1rem;
+    width: 100%;
+}

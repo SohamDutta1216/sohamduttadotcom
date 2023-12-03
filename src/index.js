@@ -6,8 +6,8 @@ import Layout from './components/Layout';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from './components/pages/About'
 import Work from './components/pages/Work';
-import Skills from './components/pages/Skills';
-import Contact from './components/pages/Contact';
+import Skills from './components/skills/Skills';
+import Contact from './components/contact/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

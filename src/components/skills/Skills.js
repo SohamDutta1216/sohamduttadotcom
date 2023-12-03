@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Nav from '../navigation/Nav';
 import Avatar from '../../images/icons/my_character.png'
+import "./skills.scss"
 const Skills = () => {
     const [selectButton, setButton] = useState('Languages')
     return (
