@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from '../navigation/Nav';
 import { Link } from "react-router-dom";
 import './phone.scss'
+
 const Phone = () => {
     const [phoneButton, setPhoneButton] = useState(false)
     return (
@@ -63,17 +64,21 @@ const Phone = () => {
                         <p className='form-title'>Contact Me</p>
                         <p onClick={() => (setPhoneButton(false))} className='form-close'>X</p>
                     </div>
-                    <div className="form-row">
-                        <div className='form-column-small'>
-                            <label>Name</label><input></input>
+                    <div className='form-container'>
+                        <div className="form-row">
+                            <div className='form-column-small'>
+                                <label>Name</label><input></input>
+                            </div>
+                            <div className='form-column-small'>
+                                <label>Email</label><input></input>
+                            </div>
                         </div>
-                        <div className='form-column-small'>
+                        <div className='form-subjext'>
                             <label>Subject</label><input></input>
                         </div>
-                    </div>
-                    <div className='form-column-large'>
-                        <label>Message</label><textarea></textarea>
-
+                        <div className='form-column-large'>
+                            <label>Message</label><textarea></textarea>
+                        </div>
                     </div>
                     <div className='form-send'> <button>Send</button></div>
                 </div>
