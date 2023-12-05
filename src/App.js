@@ -2,12 +2,13 @@ import Layout from './components/Layout';
 import React from 'react';
 import './scss/main.scss'
 import { Outlet, Link } from "react-router-dom";
-import HomeIcon from './images/icons/home.gif'
-import GitIcon from './images/icons/git.gif'
-import LinkIcon from './images/icons/linked.gif'
+
+
 function App() {
+
   return (
     <div>
+
       <div className='screen-container screen-change'>
         <Outlet />
         <div className='play-container'>
@@ -20,6 +21,7 @@ function App() {
           </button>
         </div>
       </div>
+
     </div>
   );
 }
