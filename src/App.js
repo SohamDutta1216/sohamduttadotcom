@@ -16,7 +16,7 @@ function App() {
             <h1 className="name-header">Soham Dutta</h1>
             <h1 className="sub name-header">Front End Developer</h1>
             <button className="start-button">
-              <a className='js-trigger-transition' />
+              <div className='js-trigger-transition' />
               <div class="landing-start-arrow">›</div>
               <Link to='/home'><p className='play-button' >Press Start</p></Link>
             </button>

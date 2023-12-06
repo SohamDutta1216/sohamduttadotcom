@@ -307,8 +307,14 @@ section {
   font-size: 13px;
   line-height: 1.2rem;
   height: auto;
-  font-family: 'Death Star', sans-serif;
   color: yellow !important;
+
+  h3,
+  h2,
+  p {
+    font-family: 'Death Star', sans-serif;
+    font-weight: lighter;
+  }
 
   @media(min-width: 470px) {
     width: 70vw;
@@ -316,12 +322,12 @@ section {
     color: white;
     word-wrap: break-word;
     font-size: 13px;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     height: auto;
   }
 
   @media(min-width: var.$mobile) {
-    line-height: 1.4rem;
+    line-height: 1.6rem;
   }
 
   @media(min-width: var.$tablet) {

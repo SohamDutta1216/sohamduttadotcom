@@ -1,7 +1,6 @@
 import React from 'react';
-import { useEffect, useRef, useState, useMemo } from 'react';
 import MeIcon from '../images/icons/my_character.png'
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Nav from './navigation/Nav';
 const Layout = () => {
     return (
@@ -15,7 +14,7 @@ const Layout = () => {
                 <div className='folder-wrapper'>
                     <Link to='/about'><div className='folder-columns'>
                         <div className='folder' />
-                        <p>About Me</p>
+                        <p>About</p>
                     </div></Link>
                     <Link to='/work'><div className='folder-columns'>
                         <div className='folder' />

@@ -36,9 +36,12 @@ const Projects = () => {
                         <h3>Sounds Of Spotlight
                         </h3>
                         <p>A website comissioned by a brooklyn collective based around music and events</p>
-                        <p>Tech Used: Javascript , React, SCSS,  Headless CMS : Contentful</p>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/SoundsOfSpotlight"><img src={GH}></img></a>
-                        <a className="visit" href="https://soundsofspotlight.com/" target="_blank" rel="noreferrer">Visit Site &gt;</a>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript , React, SCSS,  Headless CMS : Contentful</p>
+                        <div className="project-links">
+                            <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/SoundsOfSpotlight"><img src={GH}></img></a>
+                            <a className="visit" href="https://soundsofspotlight.com/" target="_blank" rel="noreferrer">Visit Site &gt;</a>
+                        </div>
                     </div>
                 </div>
                 <div className='project-section'>
@@ -49,9 +52,12 @@ const Projects = () => {
                         <h3>Maliha Jahangiri Interiors
                         </h3>
                         <p>A website comissioned by a brooklyn interior designer</p>
-                        <p>Tech Used: Javascript , React, SCSS,  Headless CMS : Contentful</p>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/maliha-portfolio"><img src={GH}></img></a>
-                        <a className="visit" href="https://www.malihajahangiri.com/" target="_blank" rel="noreferrer">Visit Site &gt;</a>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript , React, SCSS,  Headless CMS : Contentful</p>
+                        <div className="project-links">
+                            <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/maliha-portfolio"><img src={GH}></img></a>
+                            <a className="visit" href="https://www.malihajahangiri.com/" target="_blank" rel="noreferrer">Visit Site &gt;</a>
+                        </div>
                     </div>
                 </div>
                 <div className='projects-title'>
@@ -66,7 +72,8 @@ const Projects = () => {
                         <h3>Cryptocurrency Data Feed
                         </h3>
                         <p>A dark mode clone of the chain link home page made for a front end interview to stand out from other candidates. This application shows all cryptocurrencies along with a graph displaying their price changes over various time periods</p>
-                        <p>Tech Used: Javascript , Chart.js, CoinGecko API</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript , Chart.js, CoinGecko API</p>
                         <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/feedclone"><img src={GH}></img></a>
                     </div>
                 </div>
@@ -77,7 +84,8 @@ const Projects = () => {
                     <div className='project-description'>
                         <h3>CryptoCreeper</h3>
                         <p>Full stack web application that uses the coingecko API to retrieve all available coins and lets users track their investments and portfolio</p>
-                        <p>Tech Used: Javascript , React , Redux , Express , Node , Mongoose , MongoDB , Bcrypt , JSONwebtoken , Semantic UI , Google OAUTH , CoinGecko API</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript , React , Redux , Express , Node , Mongoose , MongoDB , Bcrypt , JSONwebtoken , Semantic UI , Google OAUTH , CoinGecko API</p>
                         <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/cryptoCreeper"><img src={GH}></img></a>
                     </div>
                 </div>
@@ -88,7 +96,8 @@ const Projects = () => {
                     <div className='project-description'>
                         <h3>Demon Dash</h3>
                         <p>Online multiplayer game built with a team of 4, using Agile Methodologies</p>
-                        <p>Tech Used: Javascript, Phaser3, SocketIO</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript, Phaser3, SocketIO</p>
                         <a target="_blank" rel="noreferrer" href="https://github.com/2004-fsa-team-jiraiya/Gammiee"><img src={GH}></img></a>
 
                     </div>
@@ -100,7 +109,8 @@ const Projects = () => {
                     <div className='project-description'>
                         <h3>Free Lance Project - LexMediaProjects</h3>
                         <p>Website comissioned for a small business</p>
-                        <p>Tech Used: Wordpress , PHP , CSS</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Wordpress , PHP , CSS</p>
                         <a className="visit" href="https://lexmediaprojects.com/" target="_blank" rel="noreferrer">Visit Site &gt;</a>
                     </div>
                 </div>
@@ -112,7 +122,8 @@ const Projects = () => {
                         <h3>Movie Search Home Page</h3>
                         <p>Responsive webpage that can search the OMDB api for movies, and allow the user to save their favourite films they feel should be up for nomination. Built in 3 days for a code challenge using custom CSS / Styled-components for animations and components.
                         </p>
-                        <p>Tech Used: Javascript , React , styled-components , CSS , Axios
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript , React , styled-components , CSS , Axios
                         </p>
                         <a target="_blank" href="https://github.com/SohamDutta1216/The-Shoppies"><img src={GH}></img></a>
 
@@ -125,7 +136,8 @@ const Projects = () => {
                     <div className='project-description'>
                         <h3>Identicon Generator</h3>
                         <p>An identicon generator</p>
-                        <p>Tech Used: Elixer, Erlang</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Elixer, Erlang</p>
                         <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/IdenticonGenerator/blob/master/README.md"><img src={GH}></img></a>
                     </div>
                 </div>
@@ -137,7 +149,8 @@ const Projects = () => {
                         <h3>Sneaker Shopper</h3>
                         <p>Full stack E-Commerce sneaker store built with a team of 4, using Agile Methodologies
                         </p>
-                        <p>Tech Used: React , Redux , Node , Express , Sequelize , Postgres , Mocha/Chai , Semantic UI , Bootstrap</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            React , Redux , Node , Express , Sequelize , Postgres , Mocha/Chai , Semantic UI , Bootstrap</p>
                         <a target="_blank" rel="noreferrer" href="https://github.com/Team-gs-Naruto/Grace-Shopper"><img src={GH}></img></a>
                     </div>
                 </div>
@@ -148,7 +161,8 @@ const Projects = () => {
                     <div className='project-description'>
                         <h3>Tandem Code Challenge</h3>
                         <p>Tandem Front-End React Code challenge that displays trivia questions with multiple-choice answers to select from</p>
-                        <p>Tech Used: Javascript, React, Semantic UI , Enzyme/Jest</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript, React, Semantic UI , Enzyme/Jest</p>
                         <a target="_blank" rel="noreferrer" href="https://github.com/SohamDutta1216/tandemApprentice"><img src={GH}></img></a>
                     </div>
                 </div>
@@ -159,7 +173,8 @@ const Projects = () => {
                     <div className='project-description'>
                         <h3>Sleep Visualizer</h3>
                         <p>Web Application built in a pair that allows user to compare REM sleep with daily habits to find correlations and chart them</p>
-                        <p>Tech Used: Javascript , React , Chart.JS , Express , Sequelize , Node , PostgreSQL</p>
+                        <p>𝗧𝗲𝗰𝗵 𝗨𝘀𝗲𝗱 :
+                            Javascript , React , Chart.JS , Express , Sequelize , Node , PostgreSQL</p>
                         <a target="_blank" rel="noreferrer" href="https://github.com/Oura-ring-tag-visualizer/sleepVisualizer"><img src={GH}></img></a>
                     </div>
                 </div>

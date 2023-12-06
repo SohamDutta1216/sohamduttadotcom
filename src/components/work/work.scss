@@ -146,11 +146,16 @@
 
 .visit {
     background-color: green;
-    padding: 5px;
+    padding: 9px;
     border-radius: 10px;
     color: white;
     font-family: 'Microsoft Sans Serif', sans-serif;
     font-weight: bolder;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
 }
 
 .project-description {
@@ -186,6 +191,10 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+
+    h3 {
+        text-decoration: none;
+    }
 }
 
 .jobs {
@@ -433,6 +442,7 @@
             display: flex;
             align-items: center;
             font-size: 1.5rem;
+            font-family: 'Microsoft Sans Serif', sans-serif;
         }
     }
 }

@@ -4,11 +4,10 @@ import App from './App';
 import './scss/main.scss'
 import Layout from './components/Layout';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from './components/pages/About'
 import Work from './components/work/Work';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
-
+import About from './components/about/About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
