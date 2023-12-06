@@ -1,10 +1,31 @@
-import React, { useState } from 'react';
-import Nav from '../navigation/Nav';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom";
 import './phone.scss'
 
 const Phone = () => {
     const [phoneButton, setPhoneButton] = useState(false)
+    const form = useRef();
+    const [showError, setError] = useState(false)
+    const [showSuccess, setSuccess] = useState(false)
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm("service_qe50n35", "template_4z8q8ah", form.current, 'user_HC18YiCW28WYlD9ry87FB')
+            .then((result) => {
+                console.log(result.text);
+                setSuccess(true)
+            }, (error) => {
+                console.log(error.text);
+                setError(true)
+                setTimeout(() => { setError(false) }, 3000)
+            });
+    };
+    console.log(form.current)
+    function onClickEvent() {
+        setPhoneButton(false)
+        setSuccess(false)
+    }
     return (
         <>
             {!phoneButton ?
@@ -59,29 +80,41 @@ const Phone = () => {
                     </div>
                 </div>
                 :
-                <div className='form'>
-                    <div className='form-modal-top'>
-                        <p className='form-title'>Contact Me</p>
-                        <p onClick={() => (setPhoneButton(false))} className='form-close'>X</p>
-                    </div>
-                    <div className='form-container'>
-                        <div className="form-row">
-                            <div className='form-column-small'>
-                                <label>Name</label><input></input>
+                <form ref={form} onSubmit={sendEmail} >
+                    <div className='form'>
+                        <div className='form-modal-top'>
+                            <p className='form-title'>Contact Me</p>
+                            <p onClick={() => (onClickEvent())} className='form-close'>X</p>
+                        </div>
+                        {!showSuccess ?
+                            <div className='form-container'>
+                                <div className="form-row">
+                                    <div className='form-column-small'>
+                                        <label>Name</label><input type="text" name="user_name" required />
+                                    </div>
+                                    <div className='form-column-small'>
+                                        <label>Email</label><input type="email" name="user_email" required />
+                                    </div>
+                                </div>
+                                <div className='form-subjext'>
+                                    <label>Subject</label><input name="subject" required />
+                                </div>
+                                <div className='form-column-large'>
+                                    <label>Message</label><textarea name="message" required />
+                                </div>
+                            </div> :
+                            <div className='form-sent-container'>
+                                <h3 >SENT</h3>
+                                <br />
+                                <h4>I'll get back to you within 3 business days </h4>
                             </div>
-                            <div className='form-column-small'>
-                                <label>Email</label><input></input>
-                            </div>
-                        </div>
-                        <div className='form-subjext'>
-                            <label>Subject</label><input></input>
-                        </div>
-                        <div className='form-column-large'>
-                            <label>Message</label><textarea></textarea>
-                        </div>
+                        }
+                        {!showSuccess &&
+                            <div className='form-send'> <button type="submit" value="Send">Send</button></div>
+                        }
+
                     </div>
-                    <div className='form-send'> <button>Send</button></div>
-                </div>
+                </form>
             }
         </>
     );
