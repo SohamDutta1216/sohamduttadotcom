@@ -20,6 +20,15 @@
     padding: 1rem;
     height: inherit;
     overflow: auto;
+
+    h1,
+    h1,
+    h3,
+    h4,
+    h5,
+    p {
+        font-family: 'Microsoft Sans Serif', sans-serif;
+    }
 }
 
 .windows-icon {
@@ -28,6 +37,11 @@
         height: 4rem;
         position: relative;
         z-index: 120;
+    }
+
+    p {
+        font-weight: 600;
+        font-family: 'Microsoft Sans Serif', sans-serif;
     }
 }
 
@@ -48,7 +62,7 @@
     h3,
     h4,
     p {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Microsoft Sans Serif', sans-serif;
     }
 
     .project-title {
@@ -58,6 +72,7 @@
         padding: 1rem;
 
         h3 {
+            padding: 1rem;
             font-size: 1.3rem;
             background-color: purple;
             color: #fff;
@@ -121,7 +136,7 @@
 
     p {
         align-self: flex-start;
-        font-weight: bold;
+        padding: 5px 0 5px 0;
     }
 
     @media(min-width: var.$tablet-l) {
@@ -134,7 +149,7 @@
     padding: 5px;
     border-radius: 10px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Microsoft Sans Serif', sans-serif;
     font-weight: bolder;
 }
 
@@ -190,7 +205,9 @@
     h3,
     h4,
     p {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Microsoft Sans Serif', sans-serif !important;
+        line-height: 1rem;
+        padding: 5px;
     }
 
     .job-title {
@@ -203,6 +220,7 @@
             font-size: 1.3rem;
             background-color: blue;
             color: #fff;
+            padding: 1rem;
 
             @media(min-width: 470px) {
                 font-size: 2rem;
@@ -335,6 +353,10 @@
         border-left: 1px solid gray;
         border-right: 1px solid #fff;
         border-bottom: 1px solid #fff;
+
+        p {
+            font-family: 'Microsoft Sans Serif', sans-serif;
+        }
     }
 
     .work-start {
@@ -357,6 +379,8 @@
                 display: flex;
                 align-self: center;
                 color: black;
+                padding: 0 4px 0 0;
+                font-family: 'Microsoft Sans Serif', sans-serif;
             }
 
             img {

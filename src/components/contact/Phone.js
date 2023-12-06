@@ -80,7 +80,7 @@ const Phone = () => {
                     </div>
                 </div>
                 :
-                <form ref={form} onSubmit={sendEmail} >
+                <form ref={form} onSubmit={sendEmail} className="form-anim">
                     <div className='form'>
                         <div className='form-modal-top'>
                             <p className='form-title'>Contact Me</p>
@@ -96,7 +96,7 @@ const Phone = () => {
                                         <label>Email</label><input type="email" name="user_email" required />
                                     </div>
                                 </div>
-                                <div className='form-subjext'>
+                                <div className='form-subject'>
                                     <label>Subject</label><input name="subject" required />
                                 </div>
                                 <div className='form-column-large'>

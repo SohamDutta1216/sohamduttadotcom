@@ -7,7 +7,7 @@ import X from '../../../images/icons/x.png'
 const Modal = ({ click, setClick, setSize, size }) => {
     return (
         <div>
-            <div className={` ${size === true ? 'windows-modal-large' : 'windows-modal'}`}>
+            <div className={` ${size === true ? 'windows-modal-large' : 'windows-modal'} form-anim`}>
                 <div className='windows-modal-top'>
                     <p className='windows-title'>{click}</p>
                     <div className='windows-modal-icons'>
