@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Nav from '../navigation/Nav';
 import VintageBG from '../../images/icons/vintage-bg.png'
 import Windows from '../../images/icons/windows.png'
 import './work.scss'

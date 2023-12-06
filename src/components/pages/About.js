@@ -1,9 +1,5 @@
 import React from 'react';
-import { useEffect, useRef, useState, useMemo } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from '../navigation/Nav';
-import MeIcon from '../../images/icons/me.png'
-import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div className='about'>
