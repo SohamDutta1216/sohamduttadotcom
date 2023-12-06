@@ -1,4 +1,3 @@
-import Layout from './components/Layout';
 import React from 'react';
 import './scss/main.scss'
 import { Outlet, Link } from "react-router-dom";

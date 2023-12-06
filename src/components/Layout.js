@@ -9,7 +9,7 @@ const Layout = ({ spotLightsData }) => {
             <Nav />
             <div className='modal-top'>
                 <h1 className='modal-name'>Soham Dutta</h1>
-                <img className='icon__me' src={MeIcon} />
+                <img className='icon__me' alt="me" src={MeIcon} />
             </div>
             <div className='modal-bottom'>
                 <div className='folder-wrapper'>

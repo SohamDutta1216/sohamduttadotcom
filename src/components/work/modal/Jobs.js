@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../work.scss'
 import ServiceTitan from '../../../images/icons/sr.jpeg'
 import FieldRoutes from '../../../images/icons/fr.jpeg'

@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../work.scss'
-import ServiceTitan from '../../../images/icons/sr.jpeg'
-import FieldRoutes from '../../../images/icons/fr.jpeg'
 import Jobs from './Jobs';
 import Projects from './Projects';
 import Max from '../../../images/icons/max.png'
 import X from '../../../images/icons/x.png'
 const Modal = ({ click, setClick, setSize, size }) => {
-    console.log(size)
     return (
         <div>
             <div className={` ${size === true ? 'windows-modal-large' : 'windows-modal'}`}>
