@@ -42,6 +42,17 @@ code {
   z-index: 100;
 }
 
+.pdf {
+  display: flex;
+  position: absolute;
+  z-index: 999999;
+
+  canvas {
+    width: 100vw !important;
+    height: auto !important;
+    overflow: scroll !important;
+  }
+}
 
 .main-header {
   flex-direction: column;

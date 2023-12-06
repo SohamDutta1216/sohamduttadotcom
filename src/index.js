@@ -9,6 +9,7 @@ import Work from './components/work/Work';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

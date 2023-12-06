@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, useMemo } from 'react';
 import MeIcon from '../images/icons/my_character.png'
 import { Outlet, Link } from "react-router-dom";
 import Nav from './navigation/Nav';
-const Layout = ({ spotLightsData }) => {
+const Layout = () => {
     return (
         <section className="main-page-wrapper screen-change bg-image">
             <Nav />

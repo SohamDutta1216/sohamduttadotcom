@@ -9,7 +9,7 @@ import Home from '../../images/icons/home.png'
 import { Link } from 'react-router-dom';
 import Modal from './modal/Modal';
 import Div100vh from 'react-div-100vh';
-
+import PDF from '../../images/icons/ResumeSoftware.pdf'
 const Work = () => {
     var [date, setDate] = useState(new Date());
     useEffect(() => {
@@ -40,7 +40,7 @@ const Work = () => {
                                         <img src={Jobs} />
                                         <p>Work Experience</p>
                                     </div>
-                                    <a className='windows-icon'>
+                                    <a className='windows-icon' href={PDF} target="_blank">
                                         <img src={Resume} />
                                         <p>Resume</p>
                                     </a>
