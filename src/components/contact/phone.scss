@@ -237,10 +237,14 @@
     display: flex;
     background-color: lightgrey;
     position: relative;
-    width: 70vw;
+    width: 90vw;
     flex-direction: column;
     border-style: groove;
     border-color: white;
+
+    @media(min-width:470px) {
+        width: 70vw;
+    }
 
     .form-modal-top {
         display: flex;

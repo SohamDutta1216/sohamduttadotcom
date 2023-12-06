@@ -12,23 +12,17 @@ import Contact from './components/contact/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='border'></div>
-    <div className="screen-overlay">
-      <div className='screen-container screen-change'>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<App />}>
-              <Route path="/home" element={<Layout />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/work" element={<Work />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/contact" element={<Contact />} />
-
-            </Route>
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="/home" element={<Layout />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

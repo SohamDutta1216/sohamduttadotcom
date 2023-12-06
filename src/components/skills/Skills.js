@@ -17,50 +17,50 @@ const Skills = () => {
                     </div>
                     {selectButton === "Languages" &&
                         <div className='skills-column'>
-                            <p className='skill-title'>Javascript</p>
-                            <div class="skill-bar"><div className='five'>5 years</div></div>
-                            <p className='skill-title'>Typescript</p>
-                            <div class="skill-bar"><div className='threefive'>3.5 years</div></div>
-                            <p className='skill-title'>HTML5</p>
-                            <div class="skill-bar"><div className='five'>5 years</div></div>
-                            <p className='skill-title'>SCSS/CSS/SASS</p>
-                            <div class="skill-bar"><div className='five'>5 years</div></div>
-                            <p className='skill-title'>GraphQL</p>
-                            <div class="skill-bar"><div className='four'>4 years</div></div>
+                            <p className='skill-title'>Javascript: 5 years</p>
+                            <div class="skill-bar"><div className='five'></div></div>
+                            <p className='skill-title'>Typescript: 3.5 years</p>
+                            <div class="skill-bar"><div className='threefive'></div></div>
+                            <p className='skill-title'>HTML5: 5 years</p>
+                            <div class="skill-bar"><div className='five'></div></div>
+                            <p className='skill-title'>SCSS/CSS/SASS: 5 years</p>
+                            <div class="skill-bar"><div className='five'></div></div>
+                            <p className='skill-title'>GraphQL: 4 years</p>
+                            <div class="skill-bar"><div className='four'></div></div>
                         </div>
                     }   {selectButton === "Libraries" &&
                         <div className='skills-column'>
-                            <p className='skill-title'>React</p>
-                            <div class="skill-bar"><div className='five'>5 years</div></div>
-                            <p className='skill-title'>GatsbyJS</p>
-                            <div class="skill-bar"><div className='four'>4 years</div></div>
-                            <p className='skill-title'>jQuery</p>
-                            <div class="skill-bar"><div className='threefive'>3.5 years</div></div>
-                            <p className='skill-title'>Jest</p>
-                            <div class="skill-bar"><div className='threefive'>3.5 years</div></div>
+                            <p className='skill-title'>React: 5 years</p>
+                            <div class="skill-bar"><div className='five'></div></div>
+                            <p className='skill-title'>GatsbyJS: 4 years</p>
+                            <div class="skill-bar"><div className='four'></div></div>
+                            <p className='skill-title'>jQuery: 3.5 years</p>
+                            <div class="skill-bar"><div className='threefive'></div></div>
+                            <p className='skill-title'>Jest: 3.5 years</p>
+                            <div class="skill-bar"><div className='threefive'></div></div>
                         </div>
                     }
                     {selectButton === "Other Tech" &&
                         <div className="skills-row">
                             <div className='skills-column'>
-                                <p className='skill-title'>AdobeXD</p>
-                                <div class="skill-bar"><div className='threefive'>3.5 years</div></div>
-                                <p className='skill-title'>Headless CMS</p>
-                                <div class="skill-bar"><div className='four'>4 years</div></div>
-                                <p className='skill-title'>Gatsby Cloud</p>
-                                <div class="skill-bar"><div className='threefive'>3.5 years</div></div>
-                                <p className='skill-title'>Jira</p>
-                                <div class="skill-bar"><div className='threefive'>3.5 years</div></div>
+                                <p className='skill-title'>AdobeXD: 3.5 years</p>
+                                <div class="skill-bar"><div className='threefive'></div></div>
+                                <p className='skill-title'>Headless CMS: 4 years</p>
+                                <div class="skill-bar"><div className='four'></div></div>
+                                <p className='skill-title'>Gatsby Cloud: 3.5 years</p>
+                                <div class="skill-bar"><div className='threefive'></div></div>
+                                <p className='skill-title'>Jira: 3.5 years</p>
+                                <div class="skill-bar"><div className='threefive'></div></div>
                             </div>
                             <div className='skills-column'>
-                                <p className='skill-title'>MongoDB</p>
-                                <div class="skill-bar"><div className='two'>2 years</div></div>
-                                <p className='skill-title'>PostgreSQL</p>
-                                <div class="skill-bar"><div className='two'>2 years</div></div>
-                                <p className='skill-title'>React Hooks</p>
-                                <div class="skill-bar"><div className='four'>4 years</div></div>
-                                <p className='skill-title'>Rest API</p>
-                                <div class="skill-bar"><div className='five'>5 years</div></div>
+                                <p className='skill-title'>MongoDB: 2 years</p>
+                                <div class="skill-bar"><div className='two'></div></div>
+                                <p className='skill-title'>PostgreSQL: 2 years</p>
+                                <div class="skill-bar"><div className='two'></div></div>
+                                <p className='skill-title'>React Hooks: 4 years</p>
+                                <div class="skill-bar"><div className='four'></div></div>
+                                <p className='skill-title'>Rest API: 5 years</p>
+                                <div class="skill-bar"><div className='five'></div></div>
                             </div>
                         </div>
                     }
