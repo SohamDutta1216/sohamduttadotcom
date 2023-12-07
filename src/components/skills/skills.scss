@@ -73,13 +73,14 @@
     flex-direction: column;
     width: 90vw;
     background-color: grey;
-
+    border-radius: 10px;
     height: 76vh;
     align-items: flex-start;
     position: relative;
     top: 5%;
 
     img {
+        border-radius: 10px;
         display: flex;
         width: auto;
         padding: 1rem;
