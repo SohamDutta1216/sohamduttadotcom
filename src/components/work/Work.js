@@ -10,6 +10,9 @@ import { Link } from 'react-router-dom';
 import Modal from './modal/Modal';
 import Div100vh from 'react-div-100vh';
 import PDF from '../../images/icons/ResumeSoftware.pdf'
+import LinkedIn from '../../images/icons/linkedin.png'
+import Github from '../../images/icons/github.png'
+import Email from '../../images/icons/email.png'
 const Work = () => {
     var [date, setDate] = useState(new Date());
     useEffect(() => {
@@ -20,9 +23,9 @@ const Work = () => {
 
     });
     var formattedTime = date.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
-
     const [click, setClick] = useState('')
     const [size, setSize] = useState(false)
+    const [start, pressStart] = useState(false)
     return (
         <div>
             <Div100vh>
@@ -54,9 +57,29 @@ const Work = () => {
                                 }
 
                             </div>
+
                             <div className='work-bar'>
-                                <div className='work-start'>
-                                    <button className='windows-logo'><img src={Windows} /><p>Start</p></button>
+                                {start &&
+                                    <div className='ms-box'>
+                                        <a href="https://www.linkedin.com/in/soham-dutta-ny/" target="_blank"><div className='ms-box-row'>
+                                            <img src={LinkedIn}></img>
+                                            <p>LinkedIn</p>
+                                        </div></a>
+                                        <a href="https://github.com/SohamDutta1216" target="_blank">
+                                            <div className='ms-box-row'>
+                                                <img src={Github}></img>
+                                                <p>Github</p>
+                                            </div></a>
+                                        <Link to='/contact'>
+                                            <div className='ms-box-row'>
+                                                <img src={Email}></img>
+                                                <p>Email</p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                }
+                                <div className={!start ? 'work-start' : 'work-start-pressed'}>
+                                    <button onClick={() => { pressStart(!start) }} className='windows-logo'><img src={Windows} /><p>Contact</p></button>
                                     <div className='windows-time'>{formattedTime}</div>
 
                                 </div>
