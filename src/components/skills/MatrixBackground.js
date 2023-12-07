@@ -1,56 +1,63 @@
-import React, { useEffect, useRef } from 'react'
-
-
+import React, { useEffect, useRef } from 'react';
 
 function MatrixBackground({ timeout }) {
     const canvas = useRef();
 
     useEffect(() => {
         const context = canvas.current.getContext('2d');
-        const width = document.body.offsetWidth;
-        const height = document.body.offsetHeight;
-        canvas.current.width = width;
-        canvas.current.height = height;
-        context.fillStyle = '#000';
-        context.fillRect(0, 0, width, height);
+        let width = window.innerWidth;
+        let height = window.innerHeight;
 
-        // calculate how many 'lines' to show and animate
-        const columns = Math.floor(width / 20) + 1;
+        const resizeCanvas = () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.current.width = width;
+            canvas.current.height = height;
+            context.fillStyle = '#000';
+            context.fillRect(0, 0, width, height);
+        };
+
+        resizeCanvas(); // Initial sizing
+
+        window.addEventListener('resize', resizeCanvas);
+
+        const columns = Math.floor(width / 15); // Adjust the character density
+        const charSize = Math.floor(width / columns);
+        const rows = Math.floor(height / charSize) + 1;
         const yPositions = Array.from({ length: columns }).fill(0);
 
-        context.fillStyle = '#000';
-        context.fillRect(0, 0, width, height);
-
         const matrixEffect = () => {
-            context.fillStyle = '#0001';
+            context.fillStyle = 'rgba(0, 0, 0, 0.04)';
             context.fillRect(0, 0, width, height);
 
             context.fillStyle = '#0f0';
-            context.font = '15pt monospace';
+            context.font = `${charSize}px monospace`;
 
             yPositions.forEach((y, index) => {
                 const text = String.fromCharCode(Math.random() * 128);
-                const x = index * 20;
+                const x = index * charSize;
                 context.fillText(text, x, y);
 
-                if (y > 100 + Math.random() * 10000) {
+                if (y > height + Math.random() * 100) {
                     yPositions[index] = 0;
                 } else {
-                    yPositions[index] = y + 20;
+                    yPositions[index] = y + charSize;
                 }
             });
         };
 
         const interval = setInterval(matrixEffect, 70);
+
         return () => {
             clearInterval(interval);
+            window.removeEventListener('resize', resizeCanvas);
         };
-    }, [canvas, timeout]);
+    }, []);
 
     return (
         <div
             style={{
-                background: '#000000',
+                background: '#000',
                 overflow: 'hidden',
                 position: 'fixed',
                 height: '100%',
@@ -62,6 +69,11 @@ function MatrixBackground({ timeout }) {
         >
             <canvas
                 ref={canvas}
+                style={{
+                    display: 'block',
+                    width: '100%',
+                    height: '100%',
+                }}
             />
         </div>
     );
