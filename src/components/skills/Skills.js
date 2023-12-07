@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import Nav from '../navigation/Nav';
-import Avatar from '../../images/icons/my_character.png'
+import Avatar from '../../images/icons/night-vision.png'
 import "./skills.scss"
+import Matrix from '../../images/icons/matrix.gif'
+import MatrixBackground from './MatrixBackground';
 const Skills = () => {
     const [selectButton, setButton] = useState('Languages')
+
     return (
         <section className="main-page-wrapper screen-change bg-image">
+            <MatrixBackground />
             <Nav />
             <div className='skills-card'>
                 <img src={Avatar}></img>
