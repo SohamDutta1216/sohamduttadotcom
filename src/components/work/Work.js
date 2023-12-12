@@ -9,7 +9,7 @@ import Home from '../../images/icons/home.png'
 import { Link } from 'react-router-dom';
 import Modal from './modal/Modal';
 import Div100vh from 'react-div-100vh';
-import PDF from '../../images/icons/ResumeSoftware.pdf'
+import PDF from '../../images/icons/Resume.pdf'
 import LinkedIn from '../../images/icons/linkedin.png'
 import Github from '../../images/icons/github.png'
 import Email from '../../images/icons/email.png'
