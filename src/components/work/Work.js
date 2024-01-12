@@ -78,8 +78,11 @@ const Work = () => {
                                         </Link>
                                     </div>
                                 }
-                                <div className={!start ? 'work-start' : 'work-start-pressed'}>
-                                    <button onClick={() => { pressStart(!start) }} className='windows-logo'><img src={Windows} /><p>Contact</p></button>
+                                <div className={start ? 'work-start-pressed' : 'work-start'}>
+                                    <button onClick={() => pressStart(!start)} className='windows-logo'>
+                                        <img src={Windows} />
+                                        <p>Contact</p>
+                                    </button>
                                     <div className='windows-time'>{formattedTime}</div>
 
                                 </div>
